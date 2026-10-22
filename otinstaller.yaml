@@ -31,7 +31,7 @@ secrets:
 runtime:
   kind: docker
   # Filled in by the release workflow with the pushed image's digest.
-  image: ghcr.io/osintverse-community/findomain@sha256:0000000000000000000000000000000000000000000000000000000000000000
+  image: ghcr.io/osintverse-community/findomain@sha256:b21b49eff674fc28e2b51cde0bb4f4254463d7037963065927bfe8822b465860
   platforms: [linux/amd64, linux/arm64]
   command: ["findomain", "-t", "{domain}", "-q"]
   output_format: text
